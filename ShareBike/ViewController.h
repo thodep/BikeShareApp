@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StationManager.h"
+#import "BikeStations.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) StationManager *stationManager;
 
 @end
 

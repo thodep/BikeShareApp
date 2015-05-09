@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1493A4F1AFD0666005DC756 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1493A4E1AFD0666005DC756 /* UserViewController.m */; };
+		D152B4061AFBF71700C74926 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D152B4051AFBF71700C74926 /* MapViewController.m */; };
 		D16DBBAC1AFBDDF500C6547C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D16DBBAB1AFBDDF500C6547C /* main.m */; };
 		D16DBBAF1AFBDDF500C6547C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D16DBBAE1AFBDDF500C6547C /* AppDelegate.m */; };
 		D16DBBB21AFBDDF500C6547C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16DBBB11AFBDDF500C6547C /* ViewController.m */; };
 		D16DBBB51AFBDDF500C6547C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16DBBB31AFBDDF500C6547C /* Main.storyboard */; };
-		D16DBBB71AFBDDF500C6547C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16DBBB61AFBDDF500C6547C /* Images.xcassets */; };
 		D16DBBBA1AFBDDF500C6547C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16DBBB81AFBDDF500C6547C /* LaunchScreen.xib */; };
 		D16DBBC61AFBDDF500C6547C /* ShareBikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D16DBBC51AFBDDF500C6547C /* ShareBikeTests.m */; };
+		D16DBBD21AFBDE2100C6547C /* BikeStations.m in Sources */ = {isa = PBXBuildFile; fileRef = D16DBBD11AFBDE2100C6547C /* BikeStations.m */; };
+		D16DBBD51AFBDE3C00C6547C /* StationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D16DBBD41AFBDE3C00C6547C /* StationManager.m */; };
+		D16DBBD81AFBDE5000C6547C /* HTTPCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = D16DBBD71AFBDE5000C6547C /* HTTPCommunication.m */; };
+		D16DBBDA1AFBDEF800C6547C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16DBBD91AFBDEF800C6547C /* CoreLocation.framework */; };
+		D16DBBDC1AFBDEFF00C6547C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16DBBDB1AFBDEFF00C6547C /* MapKit.framework */; };
+		D1E304AA1AFD2FD50038BE03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E304A91AFD2FD50038BE03 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1493A4D1AFD0666005DC756 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		D1493A4E1AFD0666005DC756 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		D152B4041AFBF71700C74926 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D152B4051AFBF71700C74926 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		D16DBBA61AFBDDF500C6547C /* ShareBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16DBBAA1AFBDDF500C6547C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D16DBBAB1AFBDDF500C6547C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,11 +46,19 @@
 		D16DBBB01AFBDDF500C6547C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D16DBBB11AFBDDF500C6547C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D16DBBB41AFBDDF500C6547C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D16DBBB61AFBDDF500C6547C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D16DBBB91AFBDDF500C6547C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D16DBBBF1AFBDDF500C6547C /* ShareBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16DBBC41AFBDDF500C6547C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D16DBBC51AFBDDF500C6547C /* ShareBikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareBikeTests.m; sourceTree = "<group>"; };
+		D16DBBD01AFBDE2100C6547C /* BikeStations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeStations.h; sourceTree = "<group>"; };
+		D16DBBD11AFBDE2100C6547C /* BikeStations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikeStations.m; sourceTree = "<group>"; };
+		D16DBBD31AFBDE3C00C6547C /* StationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationManager.h; sourceTree = "<group>"; };
+		D16DBBD41AFBDE3C00C6547C /* StationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationManager.m; sourceTree = "<group>"; };
+		D16DBBD61AFBDE5000C6547C /* HTTPCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPCommunication.h; sourceTree = "<group>"; };
+		D16DBBD71AFBDE5000C6547C /* HTTPCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPCommunication.m; sourceTree = "<group>"; };
+		D16DBBD91AFBDEF800C6547C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D16DBBDB1AFBDEFF00C6547C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D1E304A91AFD2FD50038BE03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../../Downloads/RecipeStoreTemplate-3/RecipeStore/Images.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16DBBDC1AFBDEFF00C6547C /* MapKit.framework in Frameworks */,
+				D16DBBDA1AFBDEF800C6547C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,9 @@
 		D16DBB9D1AFBDDF500C6547C = {
 			isa = PBXGroup;
 			children = (
+				D16DBBDB1AFBDEFF00C6547C /* MapKit.framework */,
+				D16DBBD91AFBDEF800C6547C /* CoreLocation.framework */,
+				D16DBBCF1AFBDE0400C6547C /* Model  */,
 				D16DBBA81AFBDDF500C6547C /* ShareBike */,
 				D16DBBC21AFBDDF500C6547C /* ShareBikeTests */,
 				D16DBBA71AFBDDF500C6547C /* Products */,
@@ -81,12 +105,15 @@
 		D16DBBA81AFBDDF500C6547C /* ShareBike */ = {
 			isa = PBXGroup;
 			children = (
+				D1493A4D1AFD0666005DC756 /* UserViewController.h */,
+				D1493A4E1AFD0666005DC756 /* UserViewController.m */,
+				D152B4041AFBF71700C74926 /* MapViewController.h */,
+				D152B4051AFBF71700C74926 /* MapViewController.m */,
 				D16DBBAD1AFBDDF500C6547C /* AppDelegate.h */,
 				D16DBBAE1AFBDDF500C6547C /* AppDelegate.m */,
 				D16DBBB01AFBDDF500C6547C /* ViewController.h */,
 				D16DBBB11AFBDDF500C6547C /* ViewController.m */,
 				D16DBBB31AFBDDF500C6547C /* Main.storyboard */,
-				D16DBBB61AFBDDF500C6547C /* Images.xcassets */,
 				D16DBBB81AFBDDF500C6547C /* LaunchScreen.xib */,
 				D16DBBA91AFBDDF500C6547C /* Supporting Files */,
 			);
@@ -96,6 +123,7 @@
 		D16DBBA91AFBDDF500C6547C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1E304A91AFD2FD50038BE03 /* Images.xcassets */,
 				D16DBBAA1AFBDDF500C6547C /* Info.plist */,
 				D16DBBAB1AFBDDF500C6547C /* main.m */,
 			);
@@ -117,6 +145,20 @@
 				D16DBBC41AFBDDF500C6547C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D16DBBCF1AFBDE0400C6547C /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				D16DBBD01AFBDE2100C6547C /* BikeStations.h */,
+				D16DBBD11AFBDE2100C6547C /* BikeStations.m */,
+				D16DBBD31AFBDE3C00C6547C /* StationManager.h */,
+				D16DBBD41AFBDE3C00C6547C /* StationManager.m */,
+				D16DBBD61AFBDE5000C6547C /* HTTPCommunication.h */,
+				D16DBBD71AFBDE5000C6547C /* HTTPCommunication.m */,
+			);
+			name = "Model ";
+			path = ShareBike;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E304AA1AFD2FD50038BE03 /* Images.xcassets in Resources */,
 				D16DBBB51AFBDDF500C6547C /* Main.storyboard in Resources */,
 				D16DBBBA1AFBDDF500C6547C /* LaunchScreen.xib in Resources */,
-				D16DBBB71AFBDDF500C6547C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +262,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D16DBBB21AFBDDF500C6547C /* ViewController.m in Sources */,
+				D16DBBD51AFBDE3C00C6547C /* StationManager.m in Sources */,
+				D16DBBD81AFBDE5000C6547C /* HTTPCommunication.m in Sources */,
+				D16DBBD21AFBDE2100C6547C /* BikeStations.m in Sources */,
 				D16DBBAF1AFBDDF500C6547C /* AppDelegate.m in Sources */,
+				D1493A4F1AFD0666005DC756 /* UserViewController.m in Sources */,
 				D16DBBAC1AFBDDF500C6547C /* main.m in Sources */,
+				D152B4061AFBF71700C74926 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +463,7 @@
 				D16DBBCB1AFBDDF500C6547C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D16DBBCC1AFBDDF500C6547C /* Build configuration list for PBXNativeTarget "ShareBikeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +472,7 @@
 				D16DBBCE1AFBDDF500C6547C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

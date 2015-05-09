@@ -16,7 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib
+    self.stationManager = [[StationManager alloc]init];
+    
+    
+    [self.stationManager getAllStations:^(NSArray *stations) {
+        for (BikeStations* bikeStations in stations) {
+               NSLog(@"%f, %f",bikeStations.coordinate.latitude, bikeStations.coordinate.longitude );
+        }
+        
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
