@@ -18,6 +18,7 @@
 //should of put subtitle as property so it will  show up on the pin ...
 
 @property (nonatomic,copy)  NSString *title;
+@property (nonatomic, readwrite, copy) NSString *subtitle;
 @property (nonatomic,strong)  NSNumber *availableDocks;
 @property (nonatomic,strong)  NSNumber *availableBikes;
 

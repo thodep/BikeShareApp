@@ -21,6 +21,7 @@
 @property (strong, nonatomic) StationManager *stationManager;
 @property(strong,nonatomic)UIButton *goButton;
 
+@property(assign,nonatomic) CLLocation *distance;
 
 -(void) showBikeStation;
 @end

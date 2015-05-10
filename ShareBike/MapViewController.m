@@ -47,7 +47,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //
+    
+    //Creat button to go to the Nearest Station
     UIButton *goButton = [[UIButton alloc] initWithFrame:CGRectMake(70,560, 250, 35)];
     goButton.backgroundColor=[UIColor redColor];
     [goButton addTarget:self action:@ selector(showBikeStation) forControlEvents:UIControlEventTouchUpInside];
@@ -56,7 +57,7 @@
     
     
     
-    //
+    // Set Map View Size 
     self.mapView = [[MKMapView alloc] initWithFrame: CGRectMake( 0, 0,self.view.frame.size.width ,550)];
     
     self.mapView.delegate = self;
@@ -88,6 +89,9 @@
             
         }
         
+    
+        
+        //Method to zoom the BikeShare Locations
         MKMapRect zoomRect = MKMapRectNull;
         for (id <MKAnnotation> annotation in self.mapView.annotations)
         {
@@ -104,24 +108,40 @@
         [self.mapView setVisibleMapRect:zoomRect animated:YES];
 
     }];
-    //Method to zoom the BikeShare Locations
+    
     
     }
 
+//When tap on the annotation pin , you can launch the map of that location
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    id <MKAnnotation> annotation = view.annotation;
+    CLLocationCoordinate2D coordinate = [annotation coordinate];
+    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate addressDictionary:nil];
+    MKMapItem *mapitem = [[MKMapItem alloc] initWithPlacemark:placemark];
+    mapitem.name = annotation.title;
+    [mapitem openInMapsWithLaunchOptions:nil];
+}
 -(void) showBikeStation{
     
     //develop a method For Loop to compare NSArray bike stations (lat, lonng coord to your current location )
-    double nearestLat = 43.648093;
-    double nearestLng = -79.384789;
+double nearestLat = 43.648093;
+double nearestLng = -79.384789;
     
     CLLocationCoordinate2D coord2 = CLLocationCoordinate2DMake(nearestLat,nearestLng);
     
     MKPlacemark *placeMark = [[MKPlacemark alloc] initWithCoordinate:coord2 addressDictionary:nil];
     MKMapItem *destination =  [[MKMapItem alloc] initWithPlacemark:placeMark];
     [destination openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeWalking}];
+    NSLog(@"Hello\tWorld\n\n");
+    
+ 
+    
 
     
-    NSLog(@"Hello Tho ");
+
+    
 
 }
 

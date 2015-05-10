@@ -20,10 +20,12 @@
 }
     
 
-
+//parsing data method
 - (void)getAllStations:(void(^)(NSArray *stations))success{
     
     NSURL *url = [NSURL URLWithString:@"http://www.bikesharetoronto.com/stations/json"];
+    
+    //run the httpcommunication url request method
     
     [_http retrieveURL:url successBlock:^(NSData *response){
         
@@ -48,7 +50,7 @@
                 BikeStations *bikeStation = [[BikeStations alloc]init];
                 
                 bikeStation.title = [NSString stringWithFormat:@"%@ (Bikes:%@, Docks:%@)", title, availableBikes, availableDocks];
-                
+                bikeStation.subtitle = [NSString stringWithFormat:@"Available Bikes: %@", [availableBikes stringValue]];
                 bikeStation.coordinate = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
               
             
