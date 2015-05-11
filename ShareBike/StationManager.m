@@ -39,9 +39,10 @@
             self.listOfBikeStations = [[NSMutableArray alloc]init];
             for (NSDictionary *dict in bikeStations) {
                 
+                
+                NSString *title=dict[@"stationName"];
                 NSNumber *longitude = dict[@"longitude"];
                 NSNumber *latitude = dict[@"latitude"];
-                NSString *title=dict[@"stationName"];
                 NSNumber *availableDocks=dict[@"availableDocks"];
                 NSNumber *availableBikes=dict[@"availableBikes"];
                 
@@ -50,12 +51,14 @@
                 BikeStations *bikeStation = [[BikeStations alloc]init];
                 
                 bikeStation.title = [NSString stringWithFormat:@"%@ (Bikes:%@, Docks:%@)", title, availableBikes, availableDocks];
+                
+                //is this another one to get the data from URL ? ask Yung if i do this , then all the lines above are useless
                 bikeStation.subtitle = [NSString stringWithFormat:@"Available Bikes: %@", [availableBikes stringValue]];
                 bikeStation.coordinate = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
               
             
                 [self.listOfBikeStations addObject:bikeStation];
-                NSLog(@"%@",bikeStation.title);//optional to put in , only use to check if information is passed on to console
+              //  NSLog(@"%@",bikeStation.title); optional to put in , only use to check if information is passed on to console
             }
             if (success) {
                 success(self.listOfBikeStations);

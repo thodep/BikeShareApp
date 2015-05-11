@@ -21,25 +21,27 @@
     
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         // Override point for customization after application launch.
-        
-        UserViewController *userViewController=[[UserViewController alloc]init];
-        userViewController.title=@"User Page";
+  
         
         MapViewController *mapViewController = [[MapViewController alloc]init];
         mapViewController.title = @"Maps";
         
-  
-        userViewController.view.backgroundColor=[UIColor blackColor];
-        mapViewController.view.backgroundColor = [UIColor whiteColor];
+        UserViewController *userViewController=[[UserViewController alloc]init];
+        userViewController.title=@"User Page";
         
+  
+ 
+        mapViewController.view.backgroundColor = [UIColor whiteColor];
+         userViewController.view.backgroundColor=[UIColor blackColor];
   
         
         UITabBarController *tabBarController = [[UITabBarController alloc]init];
         
-        userViewController.tabBarItem.image=[UIImage imageNamed:@"User"];
-        mapViewController.tabBarItem.image=[UIImage imageNamed:@"Map"];
         
-        [tabBarController setViewControllers:@[userViewController,mapViewController]];
+        mapViewController.tabBarItem.image=[UIImage imageNamed:@"Map"];
+        userViewController.tabBarItem.image=[UIImage imageNamed:@"User"];
+        
+        [tabBarController setViewControllers:@[mapViewController,userViewController]];
         
         self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
         self.window.rootViewController = tabBarController;

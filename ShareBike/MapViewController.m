@@ -91,7 +91,7 @@
         
     
         
-        //Method to zoom the BikeShare Locations
+        //Method to zoom the BikeShare Locations but if there is another method that is easier to understand , should implement it
         MKMapRect zoomRect = MKMapRectNull;
         for (id <MKAnnotation> annotation in self.mapView.annotations)
         {
@@ -126,14 +126,14 @@
 -(void) showBikeStation{
     
     //develop a method For Loop to compare NSArray bike stations (lat, lonng coord to your current location )
-double nearestLat = 43.648093;
-double nearestLng = -79.384789;
+//double nearestLat = 43.648093;
+//double nearestLng = -79.384789;
     
-    CLLocationCoordinate2D coord2 = CLLocationCoordinate2DMake(nearestLat,nearestLng);
+   // CLLocationCoordinate2D coord2 = CLLocationCoordinate2DMake(nearestLat,nearestLng);
     
-    MKPlacemark *placeMark = [[MKPlacemark alloc] initWithCoordinate:coord2 addressDictionary:nil];
-    MKMapItem *destination =  [[MKMapItem alloc] initWithPlacemark:placeMark];
-    [destination openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeWalking}];
+   // MKPlacemark *placeMark = [[MKPlacemark alloc] initWithCoordinate:coord2 addressDictionary:nil];
+    //MKMapItem *destination =  [[MKMapItem alloc] initWithPlacemark:placeMark];
+    //[destination openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeWalking}];
     NSLog(@"Hello\tWorld\n\n");
     
  

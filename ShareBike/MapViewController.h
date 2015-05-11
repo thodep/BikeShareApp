@@ -16,12 +16,12 @@
 
 @interface MapViewController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate>
 
-@property (nonatomic, strong) MKMapView *mapView;
-@property (strong,nonatomic)  CLLocationManager *locationManager;
-@property (strong, nonatomic) StationManager *stationManager;
-@property(strong,nonatomic)UIButton *goButton;
+@property (nonatomic, strong)   MKMapView *mapView;
+@property (strong,nonatomic)    CLLocationManager *locationManager;
+@property (strong, nonatomic)   StationManager *stationManager;
+@property(strong,nonatomic)     UIButton *goButton;
 
-@property(assign,nonatomic) CLLocation *distance;
 
+// method to get current user location to go to the nearest Bikeshare location .
 -(void) showBikeStation;
 @end
